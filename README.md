@@ -1,7 +1,7 @@
 # Projeto Charlie
 
 <div align="center">
-<img src="https://github.com/Gustavoo-Campos/master/blob/main/src/img/streaming.png">
+<img src="https://github.com/Gustavoo-Campos/Charlie/blob/main/src/img/Frame%2068.png">
 </div>
 
 
