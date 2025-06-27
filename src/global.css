@@ -1,0 +1,19 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: #F2EFEA;
+    color: #000000;
+    
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}

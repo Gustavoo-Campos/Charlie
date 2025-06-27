@@ -1,3 +1,4 @@
+@import url(global.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -5,31 +6,12 @@
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-
-
-body {
-    height: 100vh;
-    width: 100vw;
-    background-color: #F2EFEA;
-    color: #000000;
-}
-
 h1 {
     font-size: 24px;
     margin-top: 20px;
 }
 
-p {
-    font-size: 8px;
-    
-}
+p {font-size: 10px;}
 
 .titleUm {
     margin-top: 10px;
@@ -39,29 +21,8 @@ p {
 
 .sub-titleUm {
     margin-left: 16px;
-    transform: translateY(60%);
-
+    transform: translateY(65%);
 }
-
-
-
-
-.titleDois {
-    margin-right: 16px;
-    text-align: right;
-    transform: translateY(-150%);
-}
-
-
-
-.sub-titleDois {
-    margin-right: 16px;
-    text-align: right;
-    transform: translateY(-200%);
-    margin-bottom: 150px;
-    
-}
-
 
 .img-hero {
     width: 100%;
@@ -72,27 +33,53 @@ p {
     z-index: -1;
 }
 
+.titleDois {
+    margin-right: 16px;
+    text-align: right;
+    transform: translateY(-140%);
+}
+
+.sub-titleDois {
+    margin-right: 16px;
+    text-align: right;
+    transform: translateY(-170%);
+    
+}
 
 
-.titulo-cat, .sub-titulo-cat {
+/* - - - - - - - - - - CATÁLOGO - - - - - - - - - - - - - */
+
+
+aside{
+    width: 100vw;
+    height: 100px;
+    overflow: hidden;
+    transform: translate(0, -20px);
+}
+
+.fly{
+    position: relative;
+    animation: fly 3s ease-in-out infinite;    
+}
+
+.titulo-catalogo, .sub-titulo-catalogo, .titulo-sobre, .sub-titulo-sobre{
     text-align: center;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px 0px;
 }
 
 button{
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     background-color: #4C2A85;
     border: none;
     border-radius: 500px;
     font-size: 16px;
     cursor: pointer;
     position: relative;
-    left: calc(50% - 24px);
+    left: calc(50% - 25px);
     margin: 50px 0px;
     padding: 5px 5px 0px 5px;
 }
-
 
 .carrossel{
     width: 100vw;
@@ -131,11 +118,18 @@ button{
 }
 
 
-.title-sobre{
-    margin-top: 150px;
+/* - - - - - - - - - - SOBRE NÓS - - - - - - - - - - - - - */
+
+
+.titulo-sobre{
+    text-align: center;
+    margin: 100px 0px 0px 0px;
 }
 
-
+.sub-titulo-sobre{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
 
 .video-container{
     width: calc(100% - 32px);
@@ -150,38 +144,36 @@ button{
     overflow: hidden;
     margin: 72px 0px;
     border-radius: 8px;
-    
-    
 }
 
-.img-sobre{
-    
-    width: 100%;
-}
+.img-sobre{width: 100%;}
 
-.titulo-sobre{
-    margin-bottom: 12px;
-}
+.titulo-sobre{margin-bottom: 12px;}
 
 .texto-sobre{
-     padding: 0px 16px 110px 16px;
-     line-height: 16px;
+    padding: 0px 16px 110px 16px;
+    line-height: 16px;
 }
 
 
+/* - - - - - - - - - - MEDIA - - - - - - - - - - - - - */
 
 
+@media screen and (min-width: 768px) {
+    
+    h1{font-size: 40px;}
+    
+}
 
 
+/* - - - - - - - - - - ANIMAÇÕES - - - - - - - - - - - - - */
 
 
-
-
-
-
-
-
-
-::-webkit-scrollbar {
-    display: none;
+@keyframes fly {
+    0% {
+        transform: translateX(-10vw) translateY(80px);
+    }
+    100% {
+        transform: translateX(110vw) translateY(-20px);
+    }
 }
